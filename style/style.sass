@@ -7,12 +7,29 @@
   box-sizing: border-box
 
 body
+    display: flex
+    align-items: center
+    justify-content: center
+
     background-color: $light-grayish-blue
+
+    @media screen and (min-width: 1440px)
+        height: 100vh
 
 .container
     width: 375px
-    margin: 0 auto
+    // margin: 0 auto
 
+    @media screen and (min-width: 1440px)
+        display: grid
+        grid-template-areas: 'daniel daniel daniel daniel daniel jonathan kira''jeanette patrick patrick patrick patrick patrick kira'
+        gap: 30px
+        align-items: center
+
+        width: 85vw
+
+        // border: 1px solid red    
+        
     // border: 1px solid red
 
 .section 
@@ -21,33 +38,60 @@ body
     justify-content: space-evenly
     
     padding: 0px 30px
-    margin: 40px 0 
+    margin: 40px 0
 
     color: $white
     font-family: 'Barlow Semi Condensed'
     border-radius: 8px
+    cursor: pointer
     // border: 1px solid black
+
+    h1
+        @media screen and (min-width: 1440px)
+            font-size: 1.8rem
+
+    p
+        @media screen and (min-width: 1440px)
+            font-size: 1.2rem
+        
+
+    @media screen and (min-width: 1440px)
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        margin: 0
+
 
     &-profile
         display: flex
-        height: 40px
+        align-items: center
+        height: 35px
 
-        font-size: 15px
+        // font-size: 15px
         // border: 1px solid white
 
         &-name
-            display: flex
-            flex-direction: column
-            justify-content: center
+            // display: flex
+            // flex-direction: column
+            // justify-content: center
 
-            font-size: 13px
-            
+            // font-size: 13px
+            p
+                font-size: 13px
+                
         img
-            height: 90%
+            height: 100%
             margin-right: 18px
 
-            border-radius: 50%
-            border: 2px solid white
+            border-radius: 100%
+            border: 2px solid $light-gray
+
+        @media screen and (min-width: 1440px)
+            height: 30px
+        
+    @media screen and (min-width: 1440px)
+        padding: 30px 
+        // border: 1px solid red
 
 .section-daniel
     height: 520px
@@ -56,6 +100,10 @@ body
 
     p
         color: $light-gray
+
+    @media screen and (min-width: 1440px)
+        grid-area: daniel
+        height: 350px
 
 
 .section-jonathan
@@ -67,6 +115,10 @@ body
     p
         color: $light-gray
 
+    @media screen and (min-width: 1440px)
+        grid-area: jonathan
+        height: 350px
+
 .section-jenette
     height: 270px
 
@@ -75,6 +127,10 @@ body
 
     p
         color: $very-dark-grayish-blue
+
+    @media screen and (min-width: 1440px)
+        grid-area: jeanette
+        height: 350px
 
 .section-patrick
     height: 450px
@@ -85,6 +141,10 @@ body
     p
         color: $light-gray
 
+    @media screen and (min-width: 1440px)
+        grid-area: patrick
+        height: 350px
+
 .section-kira
     height: 540px
 
@@ -94,6 +154,9 @@ body
     p
         color: $very-dark-grayish-blue
 
+    @media screen and (min-width: 1440px)
+        grid-area: kira
+        height: 100%
 
 /*# sourceMappingURL=style.css.map */
 
