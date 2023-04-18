@@ -1,60 +1,98 @@
+@import 'variables'
+    
 * 
   margin: 0
   padding: 0
   border: 0
   box-sizing: border-box
 
+body
+    background-color: $light-grayish-blue
+
 .container
     width: 375px
     margin: 0 auto
+
+    // border: 1px solid red
 
 .section 
     display: flex
     flex-direction: column
     justify-content: space-evenly
     
-    padding: 30px
-    margin: 30px 0 
+    padding: 0px 30px
+    margin: 40px 0 
 
-    width: 350px
-
+    color: $white
     font-family: 'Barlow Semi Condensed'
-    border-radius: 5px
-    border: 1px solid black
+    border-radius: 8px
+    // border: 1px solid black
 
     &-profile
         display: flex
-        // align-items: center
-        font-size: 15px
-        
+        height: 40px
 
+        font-size: 15px
+        // border: 1px solid white
+
+        &-name
+            display: flex
+            flex-direction: column
+            justify-content: center
+
+            font-size: 13px
+            
         img
-            height: 60%
-            margin-right: 20px
+            height: 90%
+            margin-right: 18px
+
             border-radius: 50%
             border: 2px solid white
 
 .section-daniel
-    height: 500px
+    height: 520px
     
-    background-color: purple
-    color: white
+    background-color: $moderate-violet
+
+    p
+        color: $light-gray
 
 
 .section-jonathan
-    height: 260px
-    background-color: gray 
+    height: 290px
+
+    background-color: $very-dark-grayish-blue
+    color: $white 
+
+    p
+        color: $light-gray
 
 .section-jenette
-    height: 250px
-    background-color: white
+    height: 270px
+
+    background-color: $white
+    color: $very-dark-blackish-blue
+
+    p
+        color: $very-dark-grayish-blue
 
 .section-patrick
-    height: 430px
-    background-color: green
+    height: 450px
+
+    background-color: $very-dark-blackish-blue
+    color: $white
+
+    p
+        color: $light-gray
 
 .section-kira
-    height: 500px
+    height: 540px
+
+    background-color: $white
+    color: $very-dark-blackish-blue
+
+    p
+        color: $very-dark-grayish-blue
 
 
 /*# sourceMappingURL=style.css.map */
